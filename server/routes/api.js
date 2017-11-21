@@ -4,6 +4,8 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 mongoose.Promise = global.Promise;
 var loggers = require ('./user.model' )
+var passport = require('passport');
+LocalStrategy = require('passport-local').Strategy;
 
 var db ='mongodb://localhost:27017/log'
 mongoose.connect(db,{
